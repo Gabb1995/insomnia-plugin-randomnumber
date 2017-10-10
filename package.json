@@ -1,13 +1,13 @@
 {
   "name": "insomnia-plugin-randomnumber",
   "description": "Generate random numbers inside the Insomnia REST client",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "randomNumber.js",
   "insomnia": {
     "name": "randomNumber",
     "description": "Generate a random number"
   },
-  "url" : "https://github.com/Gabb1995/insomnia-plugin-randomnumber",
+  "url": "https://github.com/Gabb1995/insomnia-plugin-randomnumber",
   "dependencies": [],
   "devDependencies": [],
   "keywords": [
