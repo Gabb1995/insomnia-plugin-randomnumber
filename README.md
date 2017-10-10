@@ -1,2 +1,3 @@
 # insomnia-plugin-randomnumber
-Generate a random number for Insomina REST Client.
+Generate a random number for Insomnia REST Client.
+
