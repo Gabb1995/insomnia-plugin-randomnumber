@@ -1,7 +1,7 @@
 {
   "name": "insomnia-plugin-randomnumber",
   "description": "Generate random numbers inside the Insomnia REST client",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "randomNumber.js",
   "insomnia": {
     "name": "randomNumber",
