@@ -16,23 +16,27 @@ module.exports.templateTags = [{
             defaultValue: 10000
         },
         {
-            help: 'Adds leading 0s according to length of number',
+            help: 'Adds leading 0s according to length of number, leave 0 if you do not care.',
             displayName: 'Length',
             description: 'Length',
             type: 'number',
             defaultValue: 0
         },
         {
-            help: 'Adds decimal point to random number',
+            help: 'Adds decimal point to random number, leave 0 if you do not want any decimal point.',
             displayName: 'Decimal Point',
             description: 'Decimal Point',
             type: 'number',
             defaultValue: 0
         }
     ],
-    async run (context, min, max, length = 0, decimal = 0) {
+    async run (context, min = 1, max = 10000, length = 0, decimal = 0) {
         if (max.toString().length > length && length !== 0) {
             throw new Error("Length has to be bigger than the max number's length");
+        }
+
+        if (min > max) {
+            throw new Error("Max has to be bigger than min");
         }
 
         min = Math.ceil(min * Math.pow(10, decimal));
