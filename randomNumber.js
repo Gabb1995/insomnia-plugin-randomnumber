@@ -42,7 +42,7 @@ module.exports.templateTags = [{
         min = Math.ceil(min * Math.pow(10, decimal));
         max = Math.floor(max * Math.pow(10, decimal));
 
-        randomNumber = (Math.floor(Math.random() * (max - min)) + min).toString();
+        randomNumber = (Math.round(Math.random() * (max - min)) + min).toString();
 
         if (decimal > 0) {
             randomNumber = randomNumber.slice(0, (decimal * -1)) + '.' + randomNumber.slice(decimal * -1);
